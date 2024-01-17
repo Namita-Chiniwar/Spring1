@@ -1,0 +1,19 @@
+server:
+  port: 8082
+  
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1522:xe
+    password: Tani123
+    username: sys as sysdba
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+    show-sql: true
+    
+#    database-platform: org.hibernate.dailect.Oracle19cDialect
+  application:
+    name: VACCINATION-CENTER-SERVICE
